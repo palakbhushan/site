@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang=en>
+<head>
+  
+    <title>Testimonials(CSE_326)</title>
+
+ 
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property(CSE_326)</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="buycss.css" type="text/css" rel="Stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+ <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="https://lpu.in">Lovely Professional Univ.</a>
+</div>
+</header>
+</div>
+<br>
+<br>
+<br>
+<section id="testimonials">
+        <div class="container">
+            <h2><br>What Our Clients Are Saying</h2>
+            <div id="testimonials-slider">
+                <div>
+		<div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_7.jpg" alt="Client 7" />
+                        <p>Amit Singh</p>
+                    </div><br>
+                    <blockquote>
+                        <p>"Iy has set new benchmarks in quality, delivery and commitment; which has helped us in achieving the position of No. 1 web portal in Real Estate quadrant. The positive energy flow and motivation by the Senior leadership helps team members in keeping up the spirits high and continuously deliver high quality products. I feel proud working here and strive to progress along with MagicBricks."</p>
+                    </blockquote>
+                    
+                </div>
+
+                <div>
+
+                    <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Client 7" />
+                        <p>Md. Zaid</p>
+                    </div><br>
+                    <blockquote>
+                        <p>"Working with lpu has really been a fun
+ride. Everyday starts with a unique set of problems related to our mission of making lpu an awesome place for any property related question. Problems are solved on paper and whiteboard. The best part is that innovative solutions are encouraged. We don’t believe in the word "impossible" and strive hard to achieve something unprecedented. I love playing inter—department cricket matches on the weekend and late evening TT tournaments. If you love challenges, want to compete in a strong peer group and have a lot of appetite to learn – MB is the best place to work."</p>
+                    </blockquote>
+                </div>
+
+                <div>
+ <div class="testimonials-caption">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_8.jpg" alt="Client 7" />
+                        <p>Karan Singh</p>
+                    </div><br>
+                    <blockquote>
+                        <p>"Its only been a short while since I joined, but I have loved every single moment of my time here. The culture is just great, with everyone eager to help you, you never feel out of place! There are so many things happening constantly that keep you engrossed, from celebrations, to cricket tournaments to so many other things."</p>
+                    </blockquote>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About Stated</h5>
+                <p>This website is just for fun Purpose, created by Abhishek of LPU B-Tech CSE.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://instagram.com"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="https://linkedin.com"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2020 All rights reserved | <a href="https://lpu.in.com">Lpu.in</a><span class="fa fa-heart"></span> 
+        </small>
+    </footer>
+ <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+           $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
+
+           $('#testimonials-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+           });
+
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
+
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
+
+           $(document).on('click', (e) => {
+               let target = $(e.target);
+               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                   navMenu.css('right', '-100%');
+               }
+           });
+
+           $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
+
+               if (scrollTop >= 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '#000');
+                   headerElem.css('background', '#fff');
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#fff');
+                   headerElem.css('background', 'transparent');
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
+
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
+
+           $(document).trigger('scroll');
+        });
+    </script>
+</body>
+</html>

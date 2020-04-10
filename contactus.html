@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property(CSE_326)</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="buycss.css" type="text/css" rel="Stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+         function validate()
+      {    var emailID = document.getElementById("email").value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("email").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.getElementById("email").focus() ;
+            return false;
+         }
+}
+</script>
+</head>
+
+<body>
+
+       
+     
+                 <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="https://lpu.in">Lovely Professional Univ.</a>
+  <ul id="nav-menu">
+                        <li><a href="test2.html" >Home</a></li>
+                        <li><a href="rent.html" target="_blank">Rent</a></li>
+                        <li><a href="sell_or_post.html">Sell</a></li>
+                        <li><a href="contactus.html" class="active">Contact us</a></li>
+              
+                        <li><a href="sell_or_post.html" >Post Property For FREE</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+</div>
+</header>
+</div>
+<br>
+<br>
+<br>
+	  
+<section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="flex">
+                <div id="form-container">
+                    <h3>Contact Form</h3>
+                    <form action="test2.html" name="myForm" onclick="return(validate());">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" />
+
+                        <label for="message">Message</label>
+                        <textarea id="message">Write your message here..</textarea>
+
+                        <button class="rounded" onclick="functon validate()">Send Message</button>
+                    </form>
+                </div>
+
+                <div id="address-container">
+                    <label>Address</label>
+                    <address>
+                        Lovely Professionsl University, jalandhar , Punjab INDIA. 
+                    </address>
+
+                    <label>Phone</label>
+                    <a href="#">74880-74295</a>
+
+                    <label>Email Address</label>
+                    <a href="gmail.com">ABHi@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About Stated</h5>
+                <p>This website is just for fun Purpose, created by Abhishek of LPU B-Tech CSE.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://instagram.com"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="https://linkedin.com"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2020 All rights reserved | <a href="https://lpu.in.com">Lpu.in</a><span class="fa fa-heart"></span> 
+        </small>
+    </footer>
+   <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+  $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
+
+               if (scrollTop >= 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '#000');
+                   headerElem.css('background', '#fff');
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#fff');
+                   headerElem.css('background', 'transparent');
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
+
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
+
+           $(document).trigger('scroll');s
+        });
+    </script>
+</body>
+</html>

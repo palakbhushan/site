@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>
+property website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property(CSE_326)</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css2.css" type="text/css" rel="Stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+
+<body>
+
+    
+        <header>
+            <div class="flex container">
+                <a id="logo" href="https://lpu.in">Lovely Professional Univ.</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="test2.html" >Home</a></li>
+                        <li><a href="rent.html" target="_blank">Rent</a></li>
+                        <li><a href="" class="active">Sell</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+              
+                        <li><a href="#" class="active">Post Property For FREE</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<br>
+<br>
+        
+      
+<section id="contact">
+        <div class="container">
+
+            <div class="flex">
+                <div id="form-container">
+                    <h3>Sell or Rent your Property</h3>
+		    <p>We have over 15Lac. buyers and tenants for you</p> 
+                    <form action="test2.html" name="myForm" onclick="return(validate());">
+			<h2><b>Personal Details</b></h2>
+<label>I am <input type="radio" name="iam" id="G" required/ style="margin-left:20px;" >OWNER <input type="radio" name="iam" id="G" required/ style="margin-left:20px;">AGENT<input type="radio" name="iam" id="G" required/ style="margin-left:20px;">BUILDER</label>
+
+<label>Name</label>
+<input type="text" id="name" required/style="border:0;border-bottom: 1px solid black; outline:0; width:70%;">
+<br>
+<input list="Location" placeholder=" country code "   required/style="border:0;border-bottom: 1px solid black; outline:0; width:18%;margin-top:32px;">
+<datalist id="Location" >
+	<option value= "IND +91">
+<option value="USA +1">
+<option value="ARE +971">
+<option value="SGP +65">
+<option value="SAU +966">
+<option value="CAN +1">
+<option value="AUS +61">
+<option value="QAT +974">
+<option value="OMN +968">
+<option value="HKG +852">
+<option value="AFG +93">
+<option value="AGO +244">
+<option value="AIA +264">
+<option value="ALB +355">
+<option value="AND +376">
+<option value="ANT +599">
+<option value="TZA +255">
+<option value="UGA +256">
+<option value="UKR +380">
+<option value="URY +598">
+<option value="UZB +998">
+<option value="VCT +784">
+<option value="VEN +58">
+<option value="VGB +284">
+<option value="VIR +340">
+<option value="VNM +84">
+<option value="VUT +678">
+<option value="WLF +681">
+<option value="WSM +685">
+<option value="YEM +967">
+<option value="YUG +381">
+<option value="ZAF +27">
+<option value="ZWE +263">
+</datalist>
+
+<input type="text" name="name" id="name" placeholder=" Enter your Mobile " required/ style="border:0;border-bottom: 1px solid black; outline:0; width:45%; margin-left:30px;">
+<label>Email</label>
+<input type="text" id="email" required/style="border:0;border-bottom: 1px solid black; outline:0; width:70%;">
+<br>
+<br>
+<b style="color:#000;font-size:20px;font-family: "Roboto", "Helvetica", "Sans-serif";">Property Details</b>
+<label>For <input type="radio" name="for" id="D" required/ style="margin-left:20px;" >Sale <input type="radio" name="for" id="D" required/ style="margin-left:20px;">Rent<input type="radio" name="for" id="D" required/ style="margin-left:20px;">PG/Hostel</label>
+<label>Property Type</label>
+<input type="text" id="property" required/style="border:0;border-bottom: 1px solid black; outline:0; width:70%;">
+<br>
+<br>
+<b style="color:#000;font-size:20px;font-family: "Roboto", "Helvetica", "Sans-serif";">Property Location</b>
+
+<label>City</label>
+<input list="city",type="text" id="property" required/style="border:0;border-bottom: 1px solid black; outline:0; width:40%;">
+<label>Locality</label>
+<input type="text" id="property" required/style="border:0;border-bottom: 1px solid black; outline:0; width:40%;">
+                   
+
+
+
+
+
+
+
+
+
+
+
+                        <br><br><button class="rounded" onclick="functon validate()">Post Property</button>
+                    </form>
+                </div>
+
+                <div id="address-container">
+                    <h2>Introducing Magic Cash!</h2>
+		<p><b>Earn points </b> for every detail you enter</p>
+                    <br>
+<br>
+<p><b>Redeem</b> your Magic cash to:</p>
+<br>
+<p><b>Buy Paid Ad</b> packages</p>
+<p><b>'Send Interest'</b> to buyers/tenants</p>
+<p><b>See Buyer Profile</b> instantly</p>
+<p><b>Refresh</b> your property</p> 
+ 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About Stated</h5>
+                <p>This website is just for fun Purpose, created by Abhishek of LPU B-Tech CSE.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Subscribe to our Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Send</button>
+                </div>
+
+                <h5 class="follow-us">Follow Us</h5>
+                <ul>
+                    <li><a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="https://twitter.com"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://instagram.com"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="https://linkedin.com"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2020 All rights reserved | <a href="https://lpu.in.com">Lpu.in</a><span class="fa fa-heart"></span> 
+        </small>
+    </footer>
+
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+           $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
+
+           $('#testimonials-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+           });
+
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
+
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
+
+           $(document).on('click', (e) => {
+               let target = $(e.target);
+               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                   navMenu.css('right', '-100%');
+               }
+           });
+
+           $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
+
+               if (scrollTop >= 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '#000');
+                   headerElem.css('background', '#fff');
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#fff');
+                   headerElem.css('background', 'transparent');
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
+
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
+
+           $(document).trigger('scroll');
+        });
+    </script>
+</body>
+</html>
